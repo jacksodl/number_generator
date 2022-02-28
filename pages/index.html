@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+		<title>Number Generator Game</title>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" /> 
+		
+		<link rel="stylesheet" href="../stylesheets/mystyle.css">
+</head>
+
+<body>
+	<header>
+		<div class="calendar">
+			<p><span class="day"></span></p>
+			<p><span class="month"></span></p>
+			<p class="dayNumber"></p>
+			<p class="year"></p>
+		</div>
+		<div class="time">
+			<p class="hour"></p>
+			<p class="minutes"></p>
+		</div>
+	</header>
+	<div class="container">
+			<h1>Number Guessing Game</h1>
+			<p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We will tell you if your guess was too high or too low.</p>
+			<div class="form">
+					<label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+					<input type="submit" value="Submit guess" class="guessSubmit">
+			</div>
+			
+			<div class="resultParas">
+					<p class="guesses"></p>
+					<p class="lastResult"></p>
+					<p class="lowOrHi"></p>
+			</div>
+	</div>
+
+<script src="../javascript/numbergame.js" async></script>
+</body>
+</html>
